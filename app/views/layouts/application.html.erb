@@ -34,10 +34,6 @@
     <%= yield %>
     <footer class="footer">
       <p class="copyright">Copyright © PROTO SPACE All rights reserved.</p>
-      <!--ログインしてるユーザーが管理者の場合のみ-->
-      <% if current_user.try(:admin?) %>
-        <%= link_to '管理者ログイン', rails_admin_path %>
-      <% end %>
     </footer>
   </body>
 </html>
